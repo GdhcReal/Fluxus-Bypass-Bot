@@ -36,3 +36,7 @@ node index.js
 
 ### Step 9) Bot Command
 The command to interact with the bot is `/fluxus`.
+
+
+### CREDITS TO BYPASSI FOR FAST FLUXUS API
+https://discord.gg/UU2Kj7U85w
