@@ -51,10 +51,8 @@ client.on('interactionCreate', async interaction => {
     if (link.startsWith("https://flux.li/android/external/start.php?HWID=")) {
         try {
             await interaction.deferReply();
-            const headers = {
-                "apikey": apikey
-            }
-    		const response = await fetch(`http://132.145.68.135:6056/?url=${link}`, { headers });
+
+			const response = await fetch(`http://132.145.68.135:6056/?url=${link}&apikey=${apikey}`);
             const json = await response.json();
             if (json.status === "success") {
                 const embed = new EmbedBuilder()
