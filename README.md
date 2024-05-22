@@ -13,23 +13,28 @@ const token = "YOUR_BOT_TOKEN_HERE";
 Fill in the bot's client ID or user ID:
 const clientid = "YOUR_CLIENT_ID_HERE";
 
-### Step 4) Guild ID Setup
+### Step 4) API Key
+Get An Api Key For Free In https://discord.gg/EXa6pbQCnH And Ask wmnd For Whitelist.
+After Whitelisted Run /get-api-key In Server For Your Api Key.
+const apikey = "APIKEYHERE";
+
+### Step 5) Guild ID Setup
 Fill in the Guild ID of the server where you want the bot to operate:
 const guildid = "YOUR_GUILD_ID_HERE";
 
-### Step 5) Bot Status (Optional)
+### Step 6) Bot Status (Optional)
 Change the bot's status to your desired message:
 const botstatus = "YOUR_DESIRED_STATUS_MESSAGE";
 
-### Step 6) Embed Color (Optional)
+### Step 7) Embed Color (Optional)
 Change the color of the embed messages. Note: it has to be a hex color value:
 const embedcolor = "YOUR_HEX_COLOR_VALUE";
 
-### Step 7) Embed Footer Text (Optional)
+### Step 8) Embed Footer Text (Optional)
 Change the text displayed in the footer of embed messages:
 const footer = "YOUR_DESIRED_FOOTER_TEXT";
 
-### Step 8) Save and Run
+### Step 9) Save and Run
 Save the changes you made to `index.js` and run the bot:
 
 node index.js
