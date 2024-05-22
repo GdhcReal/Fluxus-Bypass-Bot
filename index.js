@@ -6,6 +6,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const token = "";
 const clientid = "";
 const guildid = "";
+const apikey = "";
 const botstatus = "Fluxus Bypass Bot | Bypassi Made This"
 const embedcolor = "#000000";
 const footer = "footer text here";
@@ -50,7 +51,10 @@ client.on('interactionCreate', async interaction => {
     if (link.startsWith("https://flux.li/android/external/start.php?HWID=")) {
         try {
             await interaction.deferReply();
-            const response = await fetch(`http://132.145.68.135:6056/?url=${link}`);
+            const headers = {
+                "apikey": apikey
+            }
+    		const response = await fetch(`http://132.145.68.135:6056/?url=${link}`, { headers });
             const json = await response.json();
             if (json.status === "success") {
                 const embed = new EmbedBuilder()
